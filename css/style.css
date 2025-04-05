@@ -1332,6 +1332,44 @@ body {
   opacity: 1;
 }
 
+@media only screen and (max-width: 56.25em) {
+  .popup__content {
+    display: block; /* Override table display */
+    width: 85%;
+  }
+
+  .popup__left {
+    display: flex; /* Flex container for images */
+    width: 0 !important; /* Override table-cell width */
+    padding: 0;
+    margin-bottom: 2rem;
+  }
+
+  .popup__img {
+    width: 49%; /* Slightly less than 50% to account for gap */
+    display: none !important;
+    margin: 0 !important;
+  }
+
+  .popup__right {
+    display: block !important; /* Override table-cell */
+    width: 100% !important;
+    padding: 0 2rem 2rem !important;
+  }
+
+  .popup__text {
+    column-count: 1 !important; /* Force single column */
+    column-gap: 0;
+    margin-bottom: 2rem;
+  }
+
+  .popup__close {
+    top: 1.5rem;
+    right: 1.5rem;
+    font-size: 2.5rem;
+  }
+}
+
 .popup {
   height: 100vh;
   width: 100%;
